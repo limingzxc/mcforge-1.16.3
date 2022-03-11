@@ -27,6 +27,7 @@ public class ItemInfiniteSnowball extends Item {
             world.addEntity(snowball);
         }
 
-            return new ActionResult<>(ActionResultType.SUCCESS, item);
+        // item.shrink(1);  数量 - 1
+        return new ActionResult<>(ActionResultType.SUCCESS, item);
     }
 }
