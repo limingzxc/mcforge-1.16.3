@@ -20,8 +20,8 @@ import java.util.Objects;
 
 public class Firestone extends Item {
 
-    public Firestone(Properties p_i48487_1_) {
-        super(p_i48487_1_);
+    public Firestone(Properties properties) {
+        super(properties);
     }
 
     @Override
