@@ -5,6 +5,7 @@ import com.wwwday.boson.crop.Soybean;
 import com.wwwday.boson.food.GlassApple;
 import com.wwwday.boson.food.ObsidianApple;
 import com.wwwday.boson.group.ModGroup;
+import com.wwwday.boson.item.Firestone;
 import com.wwwday.boson.item.ObsidianIngot;
 import com.wwwday.boson.melee_weapons.ObsidianSword;
 import com.wwwday.boson.missile.ItemInfiniteSnowball;
@@ -42,6 +43,8 @@ public class ModItems {
     public static final RegistryObject<Item> OBSIDIAN_CHESTPLATE = ITEMS.register("obsidian_chestplate", () -> new ArmorItem(ModArmorMaterial.OBSIDIAN, EquipmentSlotType.CHEST, (new Item.Properties()).group(ModGroup.itemGroup)));
     public static final RegistryObject<Item> OBSIDIAN_LEGGINGS = ITEMS.register("obsidian_leggings", () -> new ArmorItem(ModArmorMaterial.OBSIDIAN, EquipmentSlotType.LEGS, (new Item.Properties()).group(ModGroup.itemGroup)));
     public static final RegistryObject<Item> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots", () -> new ArmorItem(ModArmorMaterial.OBSIDIAN, EquipmentSlotType.FEET, (new Item.Properties()).group(ModGroup.itemGroup)));
+
+    public static final RegistryObject<Item> FIRESTONE = ITEMS.register("firestone", () -> new Firestone(new Item.Properties().group(ModGroup.itemGroup).maxDamage(8)));
 
     public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", Soybean::new);
 
