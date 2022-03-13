@@ -1,5 +1,7 @@
 package com.wwwday.boson.item;
 
+import com.wwwday.boson.Boson;
+import com.wwwday.boson.util.BosonTags;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -52,7 +54,7 @@ public class Firestone extends Item {
         } else {
             tooltip.add(new TranslationTextComponent("tooltip.boson.firestone"));
         }
-        
+
         super.addInformation(stack, world, tooltip, flag);
     }
 
@@ -73,7 +75,7 @@ public class Firestone extends Item {
     }
 
     private boolean blockIsValidForResistance(BlockState clickedBlock) {
-        return  clickedBlock.getBlock() == Blocks.OBSIDIAN || clickedBlock.getBlock() == Blocks.NETHERRACK;
+        return  clickedBlock.isIn(BosonTags.Blocks.FIRESTONE_CLICKABLE_BLOCKS);
     }
 
     public static void lightEntityOnFire(Entity entity, int second) {

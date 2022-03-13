@@ -45,6 +45,7 @@ public class ModItems {
     public static final RegistryObject<Item> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots", () -> new ArmorItem(ModArmorMaterial.OBSIDIAN, EquipmentSlotType.FEET, (new Item.Properties()).group(ModGroup.itemGroup)));
 
     public static final RegistryObject<Item> FIRESTONE = ITEMS.register("firestone", () -> new Firestone(new Item.Properties().group(ModGroup.itemGroup).maxDamage(8)));
+    public static final RegistryObject<Item> FIRESTONE_BLOCK = ITEMS.register("firestone_block", () -> new BlockItem(ModBlocks.FIRESTONE_BLOCK.get(), new Item.Properties().group(ModGroup.itemGroup)));
 
     public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", Soybean::new);
 
