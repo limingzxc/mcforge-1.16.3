@@ -28,7 +28,7 @@ public class FirestoneBlock extends Block {
                 System.out.println("I right-click a FirestoneBlock. Called for the Main Hand!");
             }
             if(hand == Hand.OFF_HAND) {
-                System.out.println("I left-click a FirestoneBlock. Called for the Off Hand!");
+                System.out.println("I right-click a FirestoneBlock. Called for the Off Hand!");
             }
         }
         return super.onBlockActivated(blockState, world, blockPos, playerEntity, hand, blockRayTraceResult);
@@ -38,7 +38,7 @@ public class FirestoneBlock extends Block {
     @Override
     public void onBlockClicked(BlockState blockState, World world, BlockPos blockPos, PlayerEntity playerEntity) {
         if(!world.isRemote) {
-            System.out.println("I light-click a FirestoneBlock!");
+            System.out.println("I left-click a FirestoneBlock!");
         }
     }
 
