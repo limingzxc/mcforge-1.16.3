@@ -1,7 +1,6 @@
 package com.wwwday.boson.crop;
 
 import com.wwwday.boson.ModBlocks;
-import com.wwwday.boson.ModItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
