@@ -49,6 +49,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", Soybean::new);
 
+    public static final RegistryObject<Item> OBSIDIAN_SLAB = ITEMS.register("obsidian_slab", () -> new BlockItem(ModBlocks.OBSIDIAN_SLAB.get(), new Item.Properties().group(ModGroup.itemGroup)));
+
     public void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

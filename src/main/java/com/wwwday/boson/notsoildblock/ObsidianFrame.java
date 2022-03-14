@@ -9,6 +9,8 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 
+import javax.annotation.Nonnull;
+
 public class ObsidianFrame extends Block {
     private static final VoxelShape shape;
 
@@ -26,6 +28,7 @@ public class ObsidianFrame extends Block {
         super(Properties.create(Material.ROCK).hardnessAndResistance(5).notSolid());
     }
 
+    @Nonnull
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         return shape;

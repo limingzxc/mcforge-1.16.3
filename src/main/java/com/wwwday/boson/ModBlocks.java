@@ -6,6 +6,7 @@ import com.wwwday.boson.block.ObsidianBlock;
 import com.wwwday.boson.crop.SoybeanBlock;
 import com.wwwday.boson.group.ModGroup;
 import com.wwwday.boson.notsoildblock.ObsidianFrame;
+import com.wwwday.boson.notsoildblock.ObsidianSlab;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -36,6 +37,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> FIRESTONE_BLOCK = BLOCKS.register("firestone_block",
             () -> new FirestoneBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f)));
+
+    public static final RegistryObject<Block> OBSIDIAN_SLAB = BLOCKS.register("obsidian_slab",
+            ObsidianSlab::new);
 
     public void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

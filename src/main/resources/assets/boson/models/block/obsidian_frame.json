@@ -1,8 +1,8 @@
 {
   "texture_size": [64, 64],
   "textures": {
-    "0": "boson:block/obsidian_frame_texture",
-    "particle": "boson:block/obsidian_frame_texture"
+    "0": "boson:block/obsidian_frame",
+    "particle": "boson:block/obsidian_frame"
   },
   "elements": [
     {

@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "boson:block/obsidian_frame_model" }
+    "": { "model": "boson:block/obsidian_frame" }
   }
 }

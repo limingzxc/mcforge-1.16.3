@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "boson:block/cube_block_texture_up",
-		"1": "boson:block/cube_block_texture_size",
-		"2": "boson:block/cube_block_texture_down",
-		"particle": "boson:block/cube_block_texture_up"
+		"0": "boson:block/cube_block_up",
+		"1": "boson:block/cube_block_size",
+		"2": "boson:block/cube_block_down",
+		"particle": "boson:block/cube_block_up"
 	},
 	"elements": [
 		{
