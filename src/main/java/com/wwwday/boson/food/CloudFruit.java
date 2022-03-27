@@ -36,7 +36,6 @@ public class CloudFruit extends Item {
         } else {
             tooltip.add(new TranslationTextComponent("tooltip.boson.cloud_fruit"));
         }
-
         super.addInformation(stack, world, tooltip, flag);
     }
 
