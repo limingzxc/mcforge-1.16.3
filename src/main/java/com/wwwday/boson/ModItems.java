@@ -2,7 +2,7 @@ package com.wwwday.boson;
 
 import com.wwwday.boson.armor.ModArmorMaterial;
 import com.wwwday.boson.crop.Soybean;
-import com.wwwday.boson.food.GlassApple;
+import com.wwwday.boson.food.CloudFruit;
 import com.wwwday.boson.food.ObsidianApple;
 import com.wwwday.boson.group.ModGroup;
 import com.wwwday.boson.item.Firestone;
@@ -34,7 +34,7 @@ public class ModItems {
     public static final RegistryObject<Item> OBSIDIAN_INGOT = ITEMS.register("obsidian_ingot", ObsidianIngot::new);
 
     public static final RegistryObject<Item> OBSIDIAN_APPLE = ITEMS.register("obsidian_apple", ObsidianApple::new);
-    public static final RegistryObject<Item> GLASS_APPLE = ITEMS.register("glass_apple", GlassApple::new);
+    public static final RegistryObject<Item> CLOUD_FRUIT = ITEMS.register("cloud_fruit", CloudFruit::new);
 
     public static final RegistryObject<Item> OBSIDIAN_BLOCK = ITEMS.register("obsidian_block", () -> new BlockItem(ModBlocks.OBSIDIAN_BLOCK.get(), new Item.Properties().group(ModGroup.itemGroup)));
     public static final RegistryObject<Item> CUBE_BLOCK = ITEMS.register("cube_block", () -> new BlockItem(ModBlocks.CUBE_BLOCK.get(), new Item.Properties().group(ModGroup.itemGroup)));

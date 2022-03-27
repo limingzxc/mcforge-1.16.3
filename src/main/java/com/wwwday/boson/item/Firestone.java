@@ -1,10 +1,8 @@
 package com.wwwday.boson.item;
 
-import com.wwwday.boson.Boson;
 import com.wwwday.boson.util.BosonTags;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
@@ -66,7 +64,7 @@ public class Firestone extends Item {
             lightEntityOnFire(playerEntity, 6);
 
         } else if(playerIsNotOnFire && blockIsValidForResistance(clickedBlock)) {
-            //玩家获得耐火性
+            //玩家获得耐火buff
             gainFireResistanceAndDestroyBlock(playerEntity, context.getWorld(), context.getPos());
         } else {
             //点燃地面
