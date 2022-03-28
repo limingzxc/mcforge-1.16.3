@@ -7,10 +7,10 @@ import com.wwwday.boson.crop.SoybeanBlock;
 import com.wwwday.boson.group.ModGroup;
 import com.wwwday.boson.notsoildblock.ObsidianFrame;
 import com.wwwday.boson.notsoildblock.ObsidianSlab;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import com.wwwday.boson.trees.PoplarTree;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
@@ -40,6 +40,28 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> OBSIDIAN_SLAB = BLOCKS.register("obsidian_slab",
             ObsidianSlab::new);
+
+    public static final RegistryObject<Block> POPLAR_LOG = BLOCKS.register("poplar_log",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> POPLAR_WOOD = BLOCKS.register("poplar_wood",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> STRIPPED_POPLAR_LOG = BLOCKS.register("stripped_poplar_log",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<Block> STRIPPED_POPLAR_WOOD = BLOCKS.register("stripped_poplar_wood",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> POPLAR_PLANKS = BLOCKS.register("poplar_planks",
+            () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> POPLAR_LEAVES = BLOCKS.register("poplar_leaves",
+            () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f)
+                    .tickRandomly().sound(SoundType.PLANT).notSolid()));
+
+    public static final RegistryObject<Block> POPLAR_SAPLING = BLOCKS.register("poplar_sapling",
+            () -> new SaplingBlock(new PoplarTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
 
     public void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
