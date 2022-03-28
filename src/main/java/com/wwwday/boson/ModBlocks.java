@@ -10,7 +10,6 @@ import com.wwwday.boson.notsoildblock.ObsidianSlab;
 import com.wwwday.boson.trees.PoplarTree;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
